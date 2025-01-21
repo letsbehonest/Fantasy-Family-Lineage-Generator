@@ -4,9 +4,9 @@ maleNameStorage = ['Todd', 'Barry', 'Hydraxus', 'Grin', 'Samson', 'Teradaxes', '
 
 femaleNameStorage = ['Sydney', 'Clarece', 'Adriana', 'Terra', 'Predatiuh', 'Suzy', 'Havernak', 'Tee Tee', 'Athena', 'Zeerah', 'Impeanah', 'Calpurnia', 'Sofie', 'Seena', 'Jadyn'];
 
-const randomGuyName = maleNameStorage[Math.floor(Math.random() * maleNameStorage.length)];
+let randomGuyName = maleNameStorage[Math.floor(Math.random() * maleNameStorage.length)];
 
-const randomGalName = femaleNameStorage[Math.floor(Math.random() * femaleNameStorage.length)];
+let randomGalName = femaleNameStorage[Math.floor(Math.random() * femaleNameStorage.length)];
 
 
 // Now onto flaw and Trait storage -------------------------------
@@ -14,17 +14,27 @@ const randomGalName = femaleNameStorage[Math.floor(Math.random() * femaleNameSto
 
 flawStorage = ['Cynical', 'Annoying', 'Unclean', 'Violent', 'anger issues', 'drug addiction', 'Alcoholic', 'Gambler', 'Obsessive', 'Greedy', 'Coward', 'power hungry', 'Ungrateful'];
 
-const randomFlaw = flawStorage[Math.floor(Math.random() * flawStorage.length)];
+let randomFlaw = flawStorage[Math.floor(Math.random() * flawStorage.length)];
 
 traitStorage = ['fast', 'slow', 'magical', 'fighter', 'resilient', 'frail', 'dark eyes', 'light eyes', 'dark hair', 'light hair', 'artist', 'genius', 'smooth talker', 'loving'];
 
-const randomTrait = traitStorage[Math.floor(Math.random() * traitStorage.length)];
+let randomTrait = traitStorage[Math.floor(Math.random() * traitStorage.length)];
 
-console.log(randomTrait);
+
 
 
 // age generation --------------------------------
 
 randomAge = Math.floor(Math.random() * 105) +5;
 
-console.log(randomAge);
+
+// Generating People
+
+let malePerson = randomGuyName + ' ' + familyName;
+
+let femalePerson = randomGalName + ' ' + familyName;
+
+
+
+
+
